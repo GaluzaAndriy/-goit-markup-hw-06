@@ -591,8 +591,21 @@ color: rgba(255, 255, 255, 0.6);
 }
 
 .subscribe-icon {
-  fill: #FFFFFF;;
+  fill: #FFFFFF;
+
 }
+.subscribe-wrap {
+  position: relative;
+   
+}
+
+.subscribe-icon {
+  content: "";
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: #FFFFFF;;}
 
 .subscribe-button {
   border: none;
@@ -607,8 +620,7 @@ color: rgba(255, 255, 255, 0.6);
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-
- 
+  text-align: left;
   transition: background-color var(--main-transition),
     box-shadow var(--main-transition);
 }
