@@ -538,6 +538,93 @@ body {
   background-color: rgba(49, 208, 170, 1);
 }
 
+.subscribe-footer {
+  margin-left: 80px;
+ 
+  /* display: flex;
+   align-items: center;
+  justify-content: center; */
+}
+
+.subscribe-fild {
+   display: flex;
+   align-items: center;
+  justify-content: center;
+}
+
+
+.subscribe-media {
+  margin-bottom: 16px;
+  font-weight: var(--main-font-weigth);
+  font-size: var(--main-font-size);
+  line-height: 1.5;
+  letter-spacing: var(--main-letter-spacing);
+  color: var(--first-white-color);
+}
+
+.subscribe-email::placeholder {
+  font-size: 12px;
+  line-height: 2;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-input {
+  width: 264px;
+  height: 40px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+background-color: transparent;
+  font-size: 12px;
+  margin-right: 24px;
+line-height: 2;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+color: rgba(255, 255, 255, 0.6);
+
+
+}
+
+.subscribe-icon {
+  fill: #FFFFFF;;
+}
+
+.subscribe-button {
+  border: none;
+  width: 165px;
+  padding: 8px 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #4d5ae5;
+  letter-spacing: 0.04em;
+  color: var(--first-white-color);
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+ 
+  transition: background-color var(--main-transition),
+    box-shadow var(--main-transition);
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+  color: var(--first-white-color);
+  background-color: #404BBF;;
+  /* border: 1px solid #404bbf; */
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.subscribe-button:active {
+  background-color: #404bbf;}
+
 /*------------- PORTFOLIO------------------------*/
 
 .portfolio {
@@ -697,7 +784,19 @@ body {
   align-items: center;
   justify-content: center;
   margin-left: auto;
+  transition:
+  border-color var(--main-transition),
+  fill var(--main-transition),
+  background-color var(--main-transition);
 }
+
+.modal-close:hover, 
+.modal-close:focus {
+border-color: #404BBF;
+background-color: #404BBF;
+fill: #FFFFFF;
+}
+
 
 .modal-title {
   font-weight: 500;
@@ -722,6 +821,9 @@ body {
   letter-spacing: 0.04em;
   color: rgba(117, 117, 117, 0.5);
   outline: none;
+  transition:
+  border-color var(--main-transition),
+  fill var(--main-transition);
 }
 
 .modal-input:focus {
@@ -784,29 +886,70 @@ body {
   align-items: center;
   justify-content: center;
   width: 16px;
-height: 16px;
-border: 1.25px solid #2E2F42;
-border-radius: 2px;
-margin-right: 8px;
-fill: transparent;
+  height: 16px;
+  border: 1.25px solid #2e2f42;
+  border-radius: 2px;
+  margin-right: 8px;
+  fill: transparent;
 }
 
 .check-text {
   display: flex;
-font-size: 12px;
-line-height: 1.33;
-letter-spacing: 0.04em;
-color: #757575;
-margin-bottom: 24px;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #757575;
+  margin-bottom: 24px;
+}
+
+.input-check:checked + .check-text span {
+  background-color: #404BBF;
+  border: none;
+  fill: #F4F4FD;;
 }
 
 .privacy {
-padding-left: 0.5em;
-font-size: 12px;
-line-height: 1.33;
-letter-spacing: 0.04em;
-color: #4D5AE5;
+  padding-left: 0.5em;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #4d5ae5;
 }
+
+.submit-button1 {
+  display: flex;
+}
+.submit-button {
+  border: none;
+  min-width: 169px;
+  padding: 16px 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #4d5ae5;
+  letter-spacing: 0.04em;
+  color: var(--first-white-color);
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background-color var(--main-transition),
+    box-shadow var(--main-transition);
+}
+
+.submit-button:hover,
+.submit-button:focus {
+  color: var(--first-white-color);
+  background-color: #404BBF;;
+  /* border: 1px solid #404bbf; */
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.submit-button:active {
+  background-color: #404bbf;}
+
 
 .is-hidden {
   opacity: 0;
