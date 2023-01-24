@@ -540,11 +540,13 @@ body {
 
 .subscribe-footer {
   margin-left: 80px;
-
   display: flex;
-  /* align-items: center;
-  justify-content: center; */
 }
+
+.subscribe-form {
+  display: flex;
+}
+
 
 .subscribe-fild {
   display: flex;
