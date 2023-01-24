@@ -593,6 +593,11 @@ body {
   outline: none;
 }
 
+.subscribe-input:focus {
+  border-color: #4d5ae5;
+  background-color: transparent;
+}
+
 .subscribe-icon {
   fill: #ffffff;
 }
