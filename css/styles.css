@@ -591,9 +591,12 @@ body {
   letter-spacing: 0.04em;
   color: rgba(255, 255, 255, 0.6);
   outline: none;
+  transition: border-color var(--main-transition), background-color var(--main-transition);
 }
 
-.subscribe-input:focus {
+/* не зрозумів по мекету чи потрібен тут ховер і фокус */
+.subscribe-input:focus,
+.subscribe-input:hover {
   border-color: #4d5ae5;
   background-color: transparent;
 }
